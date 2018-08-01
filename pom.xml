@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.creativeworkes</groupId>
+  <groupId>com.github.creativeworks</groupId>
   <artifactId>spring-boot-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
@@ -14,6 +14,8 @@
     <module>spring-boot-quickstart</module>
     <module>spring-boot-log4j2</module>
     <module>spring-boot-cxf</module>
+    <module>spring-boot-docker</module>
+    <module>spring-boot-cxf-common</module>
   </modules>
 
   <properties>
@@ -104,6 +106,13 @@
               </configuration>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>

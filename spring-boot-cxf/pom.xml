@@ -3,14 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
+    <groupId>com.github.creativeworks</groupId>
     <artifactId>spring-boot-parent</artifactId>
-    <groupId>com.github.creativeworkes</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>spring-boot-cxf</artifactId>
-  <name>Spring Boot CXF</name>
+  <name>Spring Boot CXF Integration</name>
 
   <dependencies>
+    <dependency>
+      <groupId>com.github.creativeworks</groupId>
+      <artifactId>spring-boot-cxf-common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
