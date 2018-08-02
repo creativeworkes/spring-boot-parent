@@ -19,7 +19,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @author Yeqinglan
  */
 @SpringBootApplication
-@ComponentScan(basePackages = { "com.github.creativeworks.cxf" })
+@ComponentScan(basePackages = { "com.github.creativeworks.cxf", "org.apache.cxf" })
 public class SpringBootCXFApp {
 
   public static void main(String[] args) {

@@ -9,7 +9,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>spring-boot-log4j2</artifactId>
-  <name>Spring Boot Log4j2</name>
+  <name>Spring Boot Log With Log4j2</name>
+
+  <properties>
+    <start-class>com.github.creativeworks.log4j2.main.SpringBootLog4j2App</start-class>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -34,7 +38,19 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
-
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
