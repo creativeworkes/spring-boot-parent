@@ -16,6 +16,8 @@
     <module>spring-boot-cxf</module>
     <module>spring-boot-cxf-common</module>
     <module>spring-boot-docker</module>
+    <module>spring-boot-nodejs</module>
+    <module>spring-boot-thymeleaf</module>
   </modules>
 
   <properties>
